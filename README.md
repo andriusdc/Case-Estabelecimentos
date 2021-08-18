@@ -4,13 +4,15 @@ Análise e tratamento de dados de estabelecimentos cadastrados no portal da Rece
 
 Arquivo escolhido: Dados Abertos CNPJ ESTABELECIMENTO 01 (disponível em: https://www.gov.br/receitafederal/pt-br/assuntos/orientacao-tributaria/cadastros/consultas/dados-publicos-cnpj)
 
+Arquivo auxiliar : Tabela de atributo Município
+
 Arquivos na pasta Código:
 
 1-Pipeline exec.ipynb
-  Jupyter Notebook com carregamento de dados e chaada da pipeline de tratamento dos dados
+  Jupyter Notebook com carregamento de dados e chamada da pipeline de tratamento dos dados
   
 2- Pipeline.py
-  Arquivo cmo definições das funções utilizadas na pipeline
+  Arquivo com definições das funções utilizadas na pipeline
   
 Outputs: <br />
  1. Arquivos CSV: <br />
@@ -37,5 +39,5 @@ Outputs: <br />
     
    
  Observações:
-  - O tempo necessário para a a plicação da pipeline ao arquivo de dados completo é marjoritariamente dominado pela etapa de geocode, uma vez que o provedor gratuito utilizado permite apenas uma query de endereço por segundo. Para minimizar esse tempo, foi filtrado os endereços a serem consultados por uma lista de CEP's próximos ao local alvo. Também foi utilizado apenas noes de logradouros únicos.
+  - O tempo necessário para a aplicação da pipeline ao arquivo de dados completo é marjoritariamente dominado pela etapa de geocode, uma vez que o provedor gratuito utilizado permite apenas uma query de endereço por segundo. Para minimizar esse tempo, foi filtrado os endereços a serem consultados por uma lista de CEP's próximos ao local alvo. Também foi utilizado apenas nomes de logradouros únicos.
     
